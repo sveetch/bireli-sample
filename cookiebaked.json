@@ -1,0 +1,87 @@
+{
+    "__version": "0.1.0",
+    "_apply_symlink_to": [
+        [
+            "project/static-sources/ckeditor/ckeditor/plugins",
+            "project/static-sources/djangocms_text/vendor/ckeditor4/plugins"
+        ],
+        [
+            "project/static-sources/ckeditor/ckeditor/styles.js",
+            "project/static-sources/djangocms_text/vendor/ckeditor4/styles.js"
+        ]
+    ],
+    "_backend_stack": [
+        "python",
+        "django",
+        "project_composer",
+        "django_configurations"
+    ],
+    "_bireli_newapp_version": "0.1.1",
+    "_bireli_version": "0.4.0",
+    "_bootstrap_version": "5.3.3",
+    "_checkout": null,
+    "_copy_without_render": [
+        "frontend/scss",
+        "frontend/js",
+        "frontend/.stylelintrc.json",
+        "frontend/.stylelintignore",
+        "project/locale",
+        "project/static",
+        "project/static-sources",
+        "project/templates",
+        "tests"
+    ],
+    "_django_configurations_version": "\u003e=2.5.1,\u003c2.6.0",
+    "_django_version": "\u003e=5.0,\u003c5.1",
+    "_frontend_stack": [
+        "node",
+        "npm",
+        "bootstrap",
+        "webpack"
+    ],
+    "_languages": {
+        "de": {
+            "name": "Deutsch",
+            "timezone": "Europe/Berlin"
+        },
+        "en": {
+            "name": "English",
+            "timezone": "America/Chicago"
+        },
+        "es": {
+            "name": "Espa\u00f1ol",
+            "timezone": "Europe/Madrid"
+        },
+        "fr": {
+            "name": "French",
+            "timezone": "Europe/Paris"
+        },
+        "it": {
+            "name": "Italiano",
+            "timezone": "Europe/Rome"
+        },
+        "ja": {
+            "name": "\u65e5\u672c\u8a9e",
+            "timezone": "Asia/Tokyo"
+        },
+        "zh": {
+            "name": "\u5b98\u8bdd",
+            "timezone": "Asia/Shanghai"
+        }
+    },
+    "_node_version": "\u003e=18.14.0",
+    "_npm_version": "\u003e=10.0.0",
+    "_output_dir": "/home/Cookies-dev/bireli/dist",
+    "_project_composer_version": "\u003e=0.7.0,\u003c0.8.0",
+    "_python_version": "\u003e=3.11",
+    "_repo_dir": ".",
+    "_template": ".",
+    "_webpack_version": "^5.91.0",
+    "init_git_repository": true,
+    "language": "en",
+    "multiple_languages": true,
+    "project_name": "release-0-4-0",
+    "project_short_description": "A sample project built from Bireli 0.4.0",
+    "project_title": "Bireli sample",
+    "versioning": "natural"
+}

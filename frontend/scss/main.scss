@@ -1,0 +1,97 @@
+///
+/// Main frontend layout styles
+///
+/// - Sass sources adopt the ITCSS structure convention;
+/// - Includes Buckle library, a Bootstrap addon for some sugar;
+/// - Bootstrap variables and utilities structure require pre/post settings way to avoid
+///   overriding too many variables when you just want to set a top level variable;
+///
+/// WARNING: DO NOT ADD ANY STYLE RULE HERE, instead add them in an accurate module to
+/// import
+///
+
+// Bootstrap and Buckle defaults and base functions
+@import "bootstrap/scss/functions";
+@import "./buckle/defaults";
+@import "./buckle/functions";
+
+// All project settings
+@import "./settings/site";
+@import "./settings/bootstrap";
+@import "./settings/buckle";
+
+// Bootstrap foundation
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/reboot";
+
+// Bootstrap components
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/accordion";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal";
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+@import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/spinners";
+@import "bootstrap/scss/offcanvas";
+@import "bootstrap/scss/placeholders";
+
+// Bootstrap helpers
+@import "bootstrap/scss/helpers";
+
+// Bootstrap utility classes build
+@import "bootstrap/scss/utilities/api";
+
+// All Buckle parts
+@import "./buckle/tools/index";
+@import "./buckle/generic/index";
+@import "./buckle/elements/index";
+@import "./buckle/objects/index";
+
+// Generic rules
+@import "./generic/html";
+@import "./generic/body";
+
+// Elements rules
+// @import "./elements/...";
+
+// Objects
+@import "./objects/color-mode";
+@import "./objects/theming";
+@import "./objects/callout";
+@import "./objects/recaptcha";
+
+// Components
+@import "./components/header";
+@import "./components/footer";
+@import "./components/content";
+
+// Variations for light/dark themes
+@import "./components/themes";
+
+// Trumps patchs
+// @import "./trumps/...";

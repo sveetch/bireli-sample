@@ -1,0 +1,27 @@
+{% extends "skeleton.html" %}
+{% load static %}
+{# djlint:off #}
+{% block html-attrs %} id="sg-document"{% endblock html-attrs %}
+{% block header-title %}Styleguide - {{ block.super }}{% endblock header-title %}
+{# djlint:on #}
+{% block metas-robot %}
+    <meta name="robots" content="noindex, nofollow">
+{% endblock metas-robot %}
+{% block header-resource-extra %}
+    <link rel="stylesheet" href="{% static "css/components/styleguide/layout.css" %}">
+{% endblock header-resource-extra %}
+{% block body-container %}
+    <div id="sg-layout">
+        <div id="sg-menu">
+            <a href="./" class="brand">
+                <h1 class="h3 sg-neutral-font">Styleguide</h1>
+            </a>
+            <ul class="sg-menu" id="sg-menu-main">
+            </ul>
+        </div>
+        <div id="sg-content">
+            {% block body-content %}
+            {% endblock body-content %}
+        </div>
+    </div>
+{% endblock body-container %}

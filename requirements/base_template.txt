@@ -1,0 +1,4 @@
+# Base
+Pillow>=10.4.0
+Django>=5.0,<5.1
+django-configurations>=2.5.1,<2.6.0
