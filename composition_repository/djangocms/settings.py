@@ -1,5 +1,7 @@
 import copy
 
+from django.utils.translation import gettext_lazy as _
+
 from project_composer.marker import EnabledApplicationMarker
 
 
@@ -12,12 +14,9 @@ class CmsBaseSettings(EnabledApplicationMarker):
 
     # Available page templates
     CMS_TEMPLATES = [
-        ("pages/free.html", "Free HTML"),
-        ("pages/single_column.html", "Single column"),
+        ("pages/free.html", _("HTML free")),
+        ("pages/single_column.html", _("Single column")),
     ]
-
-    # Required to enable iframes used by CMS admin modals
-    X_FRAME_OPTIONS = "SAMEORIGIN"
 
     # Uncomment this to enable per-object user permission
     # See http://docs.django-cms.org/en/latest/topics/permissions.html
@@ -56,8 +55,7 @@ class CmsBaseSettings(EnabledApplicationMarker):
             "sekizai",
             "djangocms_alias",
             "djangocms_versioning",
-            # "djangocms_picture",
-            # "djangocms_snippet",
+            "djangocms_snippet",
         ])
 
         # Add CMS machinary
@@ -110,14 +108,14 @@ class CmsCkeditor4Settings(EnabledApplicationMarker):
 
         # This is were you"ll put configuration for djangocms-text-ckeditor only
         cls.CKEDITOR_SETTINGS.update({
-            "extraPlugins": "youtube,vimeo,codemirror",
+            "extraPlugins": "image2,youtube,vimeo,codemirror",
             "removePlugins": "exportpdf,image,flash,stylesheetparser",
             "toolbar": "CMS",
             # The config for TextPlugin only
             "toolbar_CMS": [
                 ["Undo", "Redo"],
                 [
-                    # "cmsplugins", "-",
+                    # "CMSPlugins", "-",
                     "ShowBlocks"
                 ],
                 ["Format", "Styles"],
@@ -128,7 +126,7 @@ class CmsCkeditor4Settings(EnabledApplicationMarker):
                 ["JustifyLeft", "JustifyCenter", "JustifyRight"],
                 ["Link", "Unlink"],
                 [
-                    "Youtube", "Vimeo", "-", "NumberedList", "BulletedList",
+                    "Image", "Youtube", "Vimeo", "-", "NumberedList", "BulletedList",
                     "-", "Table", "-", "CreateDiv", "HorizontalRule",
                 ],
                 # ["Iframe"],
@@ -139,7 +137,10 @@ class CmsCkeditor4Settings(EnabledApplicationMarker):
             # djangocms-text-ckeditor
             "toolbar_HTMLField": [
                 ["Undo", "Redo"],
-                ["ShowBlocks"],
+                [
+                    # "CMSPlugins", "-",
+                    "ShowBlocks"
+                ],
                 ["Format", "Styles"],
                 ["RemoveFormat"],
                 ["Maximize"],
@@ -148,7 +149,7 @@ class CmsCkeditor4Settings(EnabledApplicationMarker):
                 ["JustifyLeft", "JustifyCenter", "JustifyRight"],
                 ["Link", "Unlink"],
                 [
-                    "Youtube", "Vimeo", "-", "NumberedList", "BulletedList",
+                    "Image", "Youtube", "Vimeo", "-", "NumberedList", "BulletedList",
                     "-", "Table", "-", "CreateDiv", "HorizontalRule",
                 ],
                 # ["Iframe"],
@@ -163,10 +164,11 @@ class CmsCkeditor5Settings:
     CMS CKEditor5 plugin
 
     .. NOTE::
-        Working but currently not enabled until we are ready to migrate from v4 to v5.
+        Working but not enabled until we are ready to migrate from v4 to v5, currently
+        it lacks of CMS and some CKeditor plugins.
 
-        Disable the ``CmsCkeditor4Settings`` settings class if you want are going this
-        v5 settings class.
+        Disable the ``CmsCkeditor4Settings`` settings class in profit of this one if
+        you want to use v5 instead of v4.
     """
     @classmethod
     def setup(cls):

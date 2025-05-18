@@ -1,5 +1,5 @@
 {
-    "name": "release-0-5-0 frontend",
+    "name": "release-0-5-1_frontend",
     "version": "0.1.0",
     "description": "The project frontend stack.",
     "author": "David THENON <sveetch@gmail.com>",
@@ -14,7 +14,7 @@
     },
     "dependencies": {
         "@popperjs/core": "^2.11.8",
-        "bootstrap": "5.3.3",
+        "bootstrap": "5.3.6",
         "sass-embedded": "^1.79.0"
     },
     "devDependencies": {

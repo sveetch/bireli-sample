@@ -6,30 +6,30 @@
 .. _project-composer: https://github.com/sveetch/project-composer
 .. _Webpack: https://webpack.js.org/
 .. _django-configurations: https://django-configurations.readthedocs.io/
-.. _Bireli: https://cookiecutter-bireli.readthedocs.io/en/0.4.0/
+.. _Bireli: https://cookiecutter-bireli.readthedocs.io/en/0.5.1/
 
 =============
-Bireli sample
+release-0-5-1
 =============
 
-A sample project built from Bireli 0.4.0
+A sample project built from Bireli 0.5.1
 
 
 Main stack components
 *********************
 
 * `Python`_ >=3.11;
-* `Django`_ >=5.0,<5.1;
+* `Django`_ >=5.2,<6.0;
 * `project-composer`_ >=0.7.0,<0.8.0;
 * `django-configurations`_ >=2.5.1,<2.6.0;
 * `Node.js`_ >=18.14.0;
 * `NPM`_ >=10.0.0;
-* `Bootstrap`_ 5.3.3;
+* `Bootstrap`_ 5.3.6;
 
 First steps
 ***********
 
-This project has been generated from ``cookiecutter-bireli==0.4.0``.
+This project has been generated from ``cookiecutter-bireli==0.5.1``.
 You may learn more about your project usage on `Bireli`_ documentation.
 
 

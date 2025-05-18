@@ -17,8 +17,8 @@
         "django_configurations"
     ],
     "_bireli_newapp_version": "0.1.1",
-    "_bireli_version": "0.4.0",
-    "_bootstrap_version": "5.3.3",
+    "_bireli_version": "0.5.1",
+    "_bootstrap_version": "5.3.6",
     "_checkout": null,
     "_copy_without_render": [
         "frontend/scss",
@@ -32,7 +32,7 @@
         "tests"
     ],
     "_django_configurations_version": "\u003e=2.5.1,\u003c2.6.0",
-    "_django_version": "\u003e=5.0,\u003c5.1",
+    "_django_version": "\u003e=5.2,\u003c6.0",
     "_frontend_stack": [
         "node",
         "npm",
@@ -71,17 +71,18 @@
     },
     "_node_version": "\u003e=18.14.0",
     "_npm_version": "\u003e=10.0.0",
-    "_output_dir": "/home/Cookies-dev/bireli/dist",
+    "_output_dir": "/home/thenonda/Projects/cookiecutter-bireli/dist",
     "_project_composer_version": "\u003e=0.7.0,\u003c0.8.0",
     "_python_version": "\u003e=3.11",
     "_repo_dir": ".",
     "_template": ".",
     "_webpack_version": "^5.91.0",
-    "init_git_repository": true,
+    "api_enabled": true,
+    "init_git_repository": false,
     "language": "en",
     "multiple_languages": true,
-    "project_name": "release-0-4-0",
-    "project_short_description": "A sample project built from Bireli 0.4.0",
-    "project_title": "Bireli sample",
+    "project_name": "release-0-5-1",
+    "project_short_description": "A sample project built from Bireli 0.5.1",
+    "project_title": "release-0-5-1",
     "versioning": "natural"
 }

@@ -22,7 +22,7 @@ def _extract_version():
 
 __version__ = _extract_version()
 
-__generator__ = "cookiecutter-bireli==0.4.0"
+__generator__ = "cookiecutter-bireli==0.5.1"
 
 
 # Initialize composer with the manifest and processors needed for Django

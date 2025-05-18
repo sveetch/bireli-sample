@@ -127,7 +127,7 @@ clean-var:
 	rm -Rf var
 .PHONY: clean-var
 
-clean-backend-install:
+clean-backend-install: clean-pycache
 	@echo ""
 	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Cleaning backend install <---$(FORMATRESET)\n"
 	@echo ""
@@ -381,7 +381,7 @@ disk-dump:
 	@echo ""
 	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Creating a Diskette archive <---$(FORMATRESET)\n"
 	@echo ""
-	$(DJANGO_MANAGE) diskette_dump -v 2
+	$(DJANGO_MANAGE) diskette_dump -v 2 --filename diskette_data_storages.tar.gz
 .PHONY: disk-dump
 
 disk-load:
@@ -394,7 +394,7 @@ disk-load:
 	mv var/media var/backup_media
 	$(MAKE) create-var-dirs
 	$(MAKE) migrate
-	$(DJANGO_MANAGE) diskette_load -v 2 --storages-basepath . diskette_data_storages.tar.gz
+	$(DJANGO_MANAGE) diskette_load -v 2 --keep --storages-basepath . diskette_data_storages.tar.gz
 .PHONY: disk-load
 
 flake:
